@@ -2,7 +2,7 @@
 int main()
 {
     int n,c=0;
-    scanf("%d",&n); 
+    scanf("%d",&n);
     for(int i=0;i<n;i++)
     {
         int x;
@@ -19,26 +19,26 @@ int main()
                 c++;
             }
         }
-            if(c==0)
+        if(c==0)
+        {
+            printf("%d",c);
+        }
+        else
+        {
+            int min=arr[0],max=arr[0];
+            for(int l=0;l<x;l++)
             {
-                printf("%d",c);
-            }
-            else
-            {
-                int min=arr[0],max=arr[0];
-                for(int l=0;l<x;l++)
+                if(min>arr[l])
                 {
-                    if(min>arr[l])
-                    {
-                        min=arr[l];
-                    }
-                    if(max<arr[l])
-                    {
-                        max=arr[l];
-                    }
+                    min=arr[l];
                 }
-                printf("%d
-",max-min);   
+                if(max<arr[l])
+                {
+                    max=arr[l];
+                }
             }
+            printf("%d
+",max-min);
+        }
     }
 }
