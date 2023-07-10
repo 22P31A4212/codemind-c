@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int cap,s,t,b;
+    int c,s,t,b,kb;
     scanf("%d%d%d",&s,&t,&b);
-    cap=s*t*b;
-    printf("%d KB",cap);
+    c=s*t*b*1;
+    printf("%d KB",c);
 }
