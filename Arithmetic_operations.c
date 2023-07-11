@@ -1,21 +1,21 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
     int a,b,s,d,p,q,r;
     scanf("%d%d",&a,&b);
-    s = a+b;
+    s=a+b;
+    d=a-b;
+    p=a*b;
+    q=a/b;
+    r=a%b;
     printf("Sum:%d
 ",s);
-    d = a-b;
     printf("Difference:%d
 ",d);
-    p = a*b;
     printf("Product:%d
 ",p);
-    q = a/b;
     printf("Quotient:%d
 ",q);
-    r = a%b;
     printf("Remainder:%d
 ",r);
 }
